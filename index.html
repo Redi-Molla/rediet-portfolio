@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rediet Molla Portfolio</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+      /* Custom font */
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      .section-header {
+        border-bottom: 2px solid #e5e7eb; /* Light gray border */
+      }
+      .project-card {
+        transition: transform 0.2s, box-shadow 0.2s;
+      }
+      .project-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <!-- Header & Profile Section (Simplified) -->
+    <header class="bg-white shadow-lg p-8">
+      <div
+        class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between"
+      >
+        <div class="flex items-center space-x-6">
+          <!-- Profile Picture Placeholder -->
+          <div
+            class="w-24 h-24 bg-gray-200 rounded-full flex items-center justify-center overflow-hidden border-4 border-blue-500"
+          >
+            <!-- Placeholder: Replace this URL with your professional headshot URL -->
+            <img
+              src="images and files/redi_pic.jpg"
+              alt="Rediet Molla Profile"
+              class="w-full h-full object-cover"
+              onerror="this.onerror=null; this.src='https://placehold.co/100x100/555555/FFFFFF?text=Photo';"
+            />
+          </div>
+          <div>
+            <h1 class="text-4xl font-extrabold text-gray-900 tracking-tight">
+              <span class="text-blue-600">Rediet</span> Molla
+            </h1>
+            <p class="text-xl text-gray-600 mt-1">Software Developer</p>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-wrap justify-center space-x-6 mt-6 md:mt-0 text-md text-gray-600"
+        >
+          <a
+            href="mailto:redietcareers@gmail.com"
+            class="hover:text-blue-600 flex items-center transition"
+          >
+            <i data-lucide="mail" class="w-5 h-5 mr-1"></i>Email
+          </a>
+          <a
+            href="https://linkedin.com/in/redietm"
+            target="_blank"
+            class="hover:text-blue-600 flex items-center transition"
+          >
+            <i data-lucide="linkedin" class="w-5 h-5 mr-1"></i>LinkedIn
+          </a>
+          <a
+            href="https://github.com/Redi-Molla"
+            target="_blank"
+            class="hover:text-blue-600 flex items-center transition"
+          >
+            <i data-lucide="github" class="w-5 h-5 mr-1"></i>GitHub
+          </a>
+          <a
+            href="images and files/Rediet_Molla_Resume.pdf"
+            target="_blank"
+            class="text-blue-600 hover:text-blue-800 flex items-center transition font-semibold"
+          >
+            <i data-lucide="file-text" class="w-5 h-5 mr-1"></i>Resume
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content Grid -->
+    <main class="max-w-6xl mx-auto p-6 grid grid-cols-1 lg:grid-cols-4 gap-8">
+      <!-- Column 1: About Me & Experience Overview (Sticky) -->
+      <div class="lg:col-span-1 space-y-8">
+        <!-- About Me Card -->
+        <section id="about" class="bg-white p-6 rounded-xl shadow-lg">
+          <h2 class="text-2xl font-bold section-header pb-2 mb-4 text-blue-600">
+            Overview
+          </h2>
+          <div class="text-gray-700 space-y-3 text-sm">
+            <p>
+              I'm a passionate first-year Computer Science student who has been
+              immersed in coding since middle school. I focus on building
+              real-world solutions and maximizing impact through
+              <strong>quantified results</strong>.
+            </p>
+            <p>
+              My areas of interest include
+              <strong>AI, Cyber Security,</strong> and
+              <strong>UX/UI Design</strong>. I'm dedicated to continuous
+              learning and collaboration.
+            </p>
+            <div class="pt-2 text-center">
+              <p class="text-blue-600 font-semibold">
+                Let's connect or build a project!
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Technical Skills (Condensed) -->
+        <section id="skills" class="bg-white p-6 rounded-xl shadow-lg">
+          <h2 class="text-2xl font-bold section-header pb-2 mb-4 text-blue-600">
+            Technical Arsenal
+          </h2>
+          <div class="space-y-4 text-sm">
+            <p class="font-semibold text-gray-900">Languages & Core:</p>
+            <p class="text-gray-700 pl-2">
+              JavaScript, TypeScript, Python, C++, SQL, HTML, CSS
+            </p>
+
+            <p class="font-semibold text-gray-900">Frameworks & Tools:</p>
+            <p class="text-gray-700 pl-2">
+              React, Node.js, Express.js, SCSS, Tailwind CSS, MySQL, Firebase
+            </p>
+
+            <p class="font-semibold text-gray-900">DevOps & Collaboration:</p>
+            <p class="text-gray-700 pl-2">
+              Git, GitHub, Jira, Jest, Postman, Heroku, Bcrypt, Figma
+            </p>
+          </div>
+        </section>
+
+        <!-- Education (Quick Reference) -->
+        <section id="education" class="bg-white p-6 rounded-xl shadow-lg">
+          <h2 class="text-2xl font-bold section-header pb-2 mb-4 text-blue-600">
+            Education
+          </h2>
+          <div class="text-sm space-y-3">
+            <p class="font-semibold text-gray-900">
+              Toronto Metropolitan University (TMU)
+            </p>
+            <p class="text-gray-700">
+              B.Sc. Computer Science | Sept. 2025 — Expected May 2029
+            </p>
+
+            <p class="font-semibold text-gray-900 pt-2">BrainStation</p>
+            <p class="text-gray-700">
+              Diploma in Software Engineering | Nov. 2023 — July 2024
+            </p>
+          </div>
+        </section>
+      </div>
+
+      <!-- Column 2: Projects, Experience, and Leadership -->
+      <div class="lg:col-span-3 space-y-10">
+        <!-- Projects Grid (Primary Focus) -->
+        <section id="projects-grid">
+          <h2
+            class="text-3xl font-bold section-header pb-3 mb-6 text-gray-900 flex items-center"
+          >
+            <i data-lucide="rocket" class="w-7 h-7 mr-3 text-blue-600"></i
+            >Featured Projects
+          </h2>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Project 1: makeitMVP - Goal Buddy Feature (NOW FIRST) -->
+            <div
+              class="project-card bg-white p-6 rounded-xl shadow-lg border-l-4 border-blue-200"
+            >
+              <h3 class="text-xl font-bold text-gray-900">
+                makeitMVP - Goal Buddy Feature
+              </h3>
+              <p class="text-sm text-gray-500 mb-3">
+                Lead Cohort Project | Jan 2025 — May 2025
+              </p>
+              <!-- Project Image Placeholder -->
+              <img
+                src="images and files/makeitMVP_home-page.jpg"
+                alt="Goal Buddy Project Demo"
+                class="rounded-lg mb-4 w-full h-auto"
+              />
+              <p class="text-gray-700 text-sm mb-4">
+                <strong>Overview:</strong> Led 5 developers to engineer an
+                interactive social feature that successfully
+                <strong>boosted platform adoption by 30%</strong> by enabling
+                users to connect based on goals.
+              </p>
+              <p class="text-xs font-semibold text-blue-600 mb-4">
+                Tech: React.js, TypeScript, Tailwind CSS, Firebase, NoSQL
+              </p>
+
+              <!-- Buttons -->
+              <div class="flex space-x-3">
+                <a
+                  href="https://github.com/makeitMVPadmin/LAP6_colab"
+                  target="_blank"
+                  class="flex items-center px-4 py-2 bg-gray-800 text-white text-sm font-medium rounded-lg hover:bg-gray-700 transition"
+                >
+                  <i data-lucide="github" class="w-4 h-4 mr-2"></i> View Code
+                </a>
+                <a
+                  href="https://colab-p6.web.app/"
+                  target="_blank"
+                  class="flex items-center px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition"
+                >
+                  <i data-lucide="clapperboard" class="w-4 h-4 mr-2"></i> View
+                  Project
+                </a>
+              </div>
+            </div>
+
+            <!-- Project 2: ChronoVault (NOW SECOND) -->
+            <div
+              class="project-card bg-white p-6 rounded-xl shadow-lg border-l-4 border-blue-200"
+            >
+              <h3 class="text-xl font-bold text-gray-900">ChronoVault</h3>
+              <p class="text-sm text-gray-500 mb-3">
+                Full-Stack Capstone | April 2024 — July 2024
+              </p>
+              <!-- Project Image Placeholder -->
+              <img
+                src="images and files/chronoVault_home-page.jpg"
+                alt="ChronoVault Project Demo"
+                class="rounded-lg mb-4 w-full h-auto"
+              />
+              <p class="text-gray-700 text-sm mb-4">
+                <strong>Overview:</strong> Developed a secure digital time
+                capsule application with a notification system that drove a
+                <strong>45% increase in user engagement</strong> during testing.
+              </p>
+              <p class="text-xs font-semibold text-blue-600 mb-4">
+                Tech: React.js, Node.js, Express.js, MySQL, bcrypt
+              </p>
+
+              <!-- Buttons -->
+              <div class="flex space-x-3">
+                <a
+                  href="https://github.com/Redi-Molla/capstone"
+                  target="_blank"
+                  class="flex items-center px-4 py-2 bg-gray-800 text-white text-sm font-medium rounded-lg hover:bg-gray-700 transition"
+                >
+                  <i data-lucide="github" class="w-4 h-4 mr-2"></i> View Code
+                </a>
+                <a
+                  href="https://docs.google.com/presentation/d/1xbklH5nDq_lt8D0MmNLekr7eylDoLIPM1lHf9h9wbyc/edit?slide=id.p1#slide=id.p1"
+                  target="_blank"
+                  class="flex items-center px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition"
+                >
+                  <i data-lucide="clapperboard" class="w-4 h-4 mr-2"></i> View
+                  Project
+                </a>
+              </div>
+            </div>
+
+            <!-- Additional Project 3: InStock -->
+            <div
+              class="project-card bg-white p-6 rounded-xl shadow-lg border-l-4 border-blue-200"
+            >
+              <h3 class="text-xl font-bold text-gray-900">InStock</h3>
+              <p class="text-sm text-gray-500 mb-3">
+                Inventory Management System | 10-Day Sprint
+              </p>
+              <!-- Project Image Placeholder -->
+              <img
+                src="images and files/instock_home-page.jpg"
+                alt="Instock Project Demo"
+                class="rounded-lg mb-4 w-full h-auto"
+              />
+              <p class="text-gray-700 text-sm mb-4">
+                Managed the development and launch of a full-stack warehouse
+                system, coordinating 4 developers and leveraging JIRA for
+                project management over a rapid sprint.
+              </p>
+              <p class="text-xs font-semibold text-blue-600 mb-4">
+                Tech: React, Express.js, MySQL, JIRA
+              </p>
+              <div class="flex space-x-3 justify-center">
+                <a
+                  href="https://docs.google.com/presentation/d/1KKabgKO880f1V9-oQeIt7RQYeq1AujnDJa38GIwv4kc/edit?usp=sharing"
+                  target="_blank"
+                  class="flex items-center px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition"
+                >
+                  <i data-lucide="clapperboard" class="w-4 h-4 mr-2"></i> View
+                  Project
+                </a>
+              </div>
+            </div>
+
+            <!-- Additional Project 4: MSRP Compliance Web Scraper -->
+            <div
+              class="project-card bg-white p-6 rounded-xl shadow-lg border-l-4 border-blue-200"
+            >
+              <h3 class="text-xl font-bold text-gray-900">
+                MSRP Compliance Web Scraper
+              </h3>
+              <p class="text-sm text-gray-500 mb-3">
+                Industry Hackathon Project | 5-Day Sprint
+              </p>
+              <!-- Project Image Placeholder -->
+              <img
+                src="images and files/industryProject_home-page.jpg"
+                alt="Industry Project Demo"
+                class="rounded-lg mb-4 w-full h-auto"
+              />
+              <p class="text-gray-700 text-sm mb-4">
+                Developed a price monitoring tool to ensure product compliance
+                for a major tech company. Built using Python and Beautiful Soup
+                within a rapid 5-day hackathon environment.
+              </p>
+              <p class="text-xs font-semibold text-blue-600 mb-4">
+                Tech: Python, Beautiful Soup, Figma
+              </p>
+              <div class="flex space-x-3 justify-center">
+                <a
+                  href="https://docs.google.com/presentation/d/1J4X3aSOUBf6Xolq737Ouku-YB4RjuqT1BQubqO_HdR0/edit?slide=id.p#slide=id.p"
+                  target="_blank"
+                  class="flex items-center px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition"
+                >
+                  <i data-lucide="clapperboard" class="w-4 h-4 mr-2"></i> View
+                  Project
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Professional Experience -->
+        <section id="experience">
+          <h2
+            class="text-3xl font-bold section-header pb-3 mb-6 text-gray-900 flex items-center"
+          >
+            <i data-lucide="briefcase" class="w-7 h-7 mr-3 text-blue-600"></i
+            >Professional Experience
+          </h2>
+          <div class="space-y-6">
+            <!-- Bell - Sales Consultant (Current Role) -->
+            <div
+              class="bg-white p-5 rounded-xl shadow-md border-l-4 border-gray-400"
+            >
+              <h3 class="text-xl font-bold text-gray-900">
+                Bell
+                <span class="text-base font-normal text-gray-600"
+                  >| Sales Consultant</span
+                >
+              </h3>
+              <p class="text-sm text-gray-500 italic">
+                Best Buy Express, Toronto, ON | Aug 2024 — Present
+              </p>
+              <ul class="list-disc ml-5 text-sm text-gray-700 space-y-1 mt-3">
+                <li>
+                  Represented Bell Canada by analyzing customer needs to deliver
+                  personalized solutions and building lasting relationships,
+                  contributing to a <strong>15% increase in sales</strong>.
+                </li>
+                <li>
+                  Utilized Bell’s customer management platform to improve
+                  service delivery and
+                  <strong>reduce resolution time by 18%</strong>, enhancing
+                  customer satisfaction and operational efficiency.
+                </li>
+              </ul>
+            </div>
+
+            <!-- METZ Solutions -->
+            <div
+              class="bg-white p-5 rounded-xl shadow-md border-l-4 border-gray-400"
+            >
+              <h3 class="text-xl font-bold text-gray-900">
+                METZ Solutions
+                <span class="text-base font-normal text-gray-600"
+                  >| Software Developer Intern</span
+                >
+              </h3>
+              <p class="text-sm text-gray-500 italic">
+                Toronto, ON | Aug 2023 — Aug 2024
+              </p>
+              <ul class="list-disc ml-5 text-sm text-gray-700 space-y-1 mt-3">
+                <li>
+                  Built and maintained the responsive design and user experience
+                  of the job application platform
+                  <strong>from scratch</strong> using React, ensuring optimal
+                  presentation for <strong>500+ users</strong> across all
+                  devices.
+                </li>
+                <li>
+                  Performance & UI (STAR): Optimized website functionality by
+                  implementing and refining fetch APIs and leveraging SCSS and
+                  React libraries to enhance the user interface, successfully
+                  <strong>reducing customer response times by 25%</strong>.
+                </li>
+                <li>
+                  Integration & Database Refinement: Assisted the engineering
+                  team in implementing Node.js to bridge the React front-end
+                  with the back-end, refining MySQL data structures and
+                  optimizing fetch logic to ensure seamless and efficient data
+                  consumption by the user interface.
+                </li>
+              </ul>
+            </div>
+
+            <!-- Yenetta Code -->
+            <div
+              class="bg-white p-5 rounded-xl shadow-md border-l-4 border-gray-400"
+            >
+              <h3 class="text-xl font-bold text-gray-900">
+                Yenetta Code
+                <span class="text-base font-normal text-gray-600"
+                  >| Coding Instructor</span
+                >
+              </h3>
+              <p class="text-sm text-gray-500 italic">
+                Addis Ababa, Ethiopia | May 2019 — July 2023
+              </p>
+              <ul class="list-disc ml-5 text-sm text-gray-700 space-y-1 mt-3">
+                <li>
+                  Mentored and instructed cohorts of 3-5 students every four
+                  months in fundamental coding languages including HTML, CSS,
+                  and JavaScript.
+                </li>
+                <li>
+                  Developed project-based workshops and hosted hackathons, which
+                  helped <strong>100+ students</strong> grow from zero
+                  experience to proficiency, and resulted in several mentees
+                  achieving <strong>competitive success</strong> in hosted
+                  hackathons.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Leadership & Recognition -->
+        <section id="leadership">
+          <h2
+            class="text-3xl font-bold section-header pb-3 mb-6 text-gray-900 flex items-center"
+          >
+            <i data-lucide="star" class="w-7 h-7 mr-3 text-blue-600"></i
+            >Leadership & Recognition
+          </h2>
+
+          <div class="space-y-6">
+            <!-- BBSA -->
+            <div class="bg-white p-5 rounded-xl shadow-md">
+              <h3 class="text-xl font-bold text-gray-900">
+                Black Business Student Association (BBSA)
+              </h3>
+              <p class="text-sm text-gray-500 italic">
+                Member, Rotational Program | TMU | Sept 2025 — Present
+              </p>
+              <ul class="list-disc ml-5 text-sm text-gray-700 space-y-1 mt-3">
+                <li>
+                  Actively contributing to the planning pipeline for upcoming
+                  professional development workshops and assisting with
+                  corporate sponsor identification and research.
+                </li>
+              </ul>
+            </div>
+
+            <!-- Cansbridge Fellowship -->
+            <div class="bg-white p-5 rounded-xl shadow-md">
+              <h3 class="text-xl font-bold text-gray-900">
+                Cansbridge Scholar
+              </h3>
+              <p class="text-sm text-gray-500 italic">
+                The Cansbridge Fellowship | 2025 Cohort
+              </p>
+              <ul class="list-disc ml-5 text-sm text-gray-700 space-y-1 mt-3">
+                <li>
+                  Selected as one of a limited number of scholars across Canada
+                  for this highly competitive leadership and innovation program.
+                </li>
+                <li>
+                  Engaging in mentorship, speaker sessions, and global career
+                  preparation while building connections with a high-performing
+                  community of peers and alumni.
+                </li>
+              </ul>
+            </div>
+
+            <!-- makeitMVP Cohort Program -->
+            <div class="bg-white p-5 rounded-xl shadow-md">
+              <h3 class="text-xl font-bold text-gray-900">
+                makeitMVP - Cohort Program
+              </h3>
+              <p class="text-sm text-gray-500 italic">
+                Toronto, ON | Jan 2025 — May 2025
+              </p>
+              <ul class="list-disc ml-5 text-sm text-gray-700 space-y-1 mt-3">
+                <li>
+                  Led the development team of 5 developers within a
+                  cross-functional environment (PMs, designers) to successfully
+                  engineer a complex Goal Buddy feature (see Featured Project).
+                </li>
+              </ul>
+            </div>
+
+            <!-- Licenses & Certifications -->
+            <div class="bg-white p-5 rounded-xl shadow-md">
+              <h3 class="text-xl font-bold text-gray-900">
+                Licenses & Certifications
+              </h3>
+              <ul class="list-disc ml-5 text-sm text-gray-700 space-y-1 mt-3">
+                <li>
+                  <strong>DMZ Ventures - Launchpad 2.0:</strong> Program
+                  designed to guide aspiring entrepreneurs through the essential
+                  steps of building, marketing, and funding a startup.
+                </li>
+                <li><strong>Microsoft Reach Mentoring Program</strong></li>
+                <li>
+                  <strong>Udemy:</strong> Learn Flowcharting and Pseudocode.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 text-xs text-gray-500 border-t mt-8">
+      Portfolio developed by Rediet Molla | Hosted via GitHub Pages
+    </footer>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
