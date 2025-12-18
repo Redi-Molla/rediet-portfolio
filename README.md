@@ -38,7 +38,7 @@ This is a static HTML site. No complex build tools are required.
 - Open the `index.html` file in your preferred code editor (e.g., VS Code).
 - Update Placeholders: Find and replace the following placeholder links and images with your actual content:
   - `src="images and files/redi pic.jpg"`: Replace with the actual link to your profile photo.
-  - `href="images and files/Rediet_Molla_Resume.pdf"`: Update the file path or link to your latest resume PDF.
+  - `href="images and files/Rediet_Resume.pdf"`: Update the file path or link to your latest resume PDF.
   - `href="[PASTE_..._DEMO_LINK_HERE]"`: Replace all placeholder demo links in the project cards with your specific video or photo URLs (e.g., Google Slide, Google Drive).
   - GitHub Links: Verify all `href` links for "View Code" buttons point to the correct GitHub repositories for each project.
 
@@ -59,16 +59,6 @@ If you own a domain (like yourdomain.com from GoDaddy), follow the instructions 
 - On the GitHub Pages settings page, enter your custom domain (e.g., www.yourdomain.com) in the "Custom domain" field and click Save.
 - Follow the instructions GitHub provides to update the CNAME and A records in your GoDaddy DNS settings.
 - Propagation typically takes 30 minutes to a few hours.
-
-## 📄 Project Highlights
-
-The portfolio features evidence of strong technical execution and project coordination:
-
-| Project        | Key Achievement                                                                              | Technologies Used                    |
-|----------------|---------------------------------------------------------------------------------------------|--------------------------------------|
-| makeitMVP      | Led a development team of 5, resulting in a 30% increase in platform feature adoption rate (STAR result). | React, TypeScript, Firebase, NoSQL   |
-| ChronoVault    | Engineered a notification system that drove a 45% increase in user engagement during testing. | Node.js, Express.js, MySQL, bcrypt   |
-| METZ Solutions | Optimized client-facing UIs, successfully reducing customer response times by 25% across devices. | React, SCSS, Node.js, MySQL          |
 
 ## 🙋 Contact
 
